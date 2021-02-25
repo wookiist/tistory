@@ -3613,9 +3613,9 @@ html {
 }
 
 .article-view p {
-    margin-bottom: 28px !important;
-		padding-top: 0px !important;
-		padding-bottom: 0px !important;
+    margin-bottom: 15px !important;
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
     font-size: 16px;
     line-height: 26px;
     color: #555;
@@ -3680,6 +3680,7 @@ html {
 .article-view ul li {
     font-size: 16px;
     line-height: 24px;
+    margin-bottom: 12px; /* 2021-02-25 List 다음에 P가 나올 때 간격이 거의 없는 버그 수정 */
     color: rgba(0, 0, 0, 0.87);
     word-break: break-all;
 }
