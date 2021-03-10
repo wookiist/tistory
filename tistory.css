@@ -1,6 +1,19 @@
 /* @charset "UTF-8";
 /*! normalize.css v8.0.0 | MIT License | github.com/necolas/normalize.css */
 
+@font-face {
+	font-family: "D2 Coding";
+	font-style: normal;
+	font-weight: 400;
+	src: url( "./images/D2Coding.woff2" ) format( "woff2" ), url( "./images/D2Coding.woff" ) format( "woff" );
+}
+@font-face {
+	font-family: "D2 Coding";
+	font-style: normal;
+	font-weight: 700;
+	src: url( "./images/D2CodingBold.woff2" ) format( "woff2" ), url( "./images/D2CodingBold.woff" ) format( "woff" );
+}
+
 .clearfix{
 	content: "";
 	clear: both;
@@ -60,7 +73,7 @@ strong {
 code,
 kbd,
 samp {
-    font-family: monospace, monospace;
+    font-family: "D2 Coding", monospace, monospace;
     /* 1 */
     font-size: 1em;
     /* 2 */
@@ -386,6 +399,8 @@ html {
 
 
     .wrap-drawer .area-aside .box-profile .img-profile {
+        width: 140px;
+        height: 140px;
         margin: 80px 0 13px 0;
     }
 
@@ -1411,7 +1426,7 @@ html {
 /* area-main */
 .area-main {
     width: 100%;
-    max-width: 640px;
+    max-width: 670px; /* 210310 https://imheroim.tistory.com/43 */
 }
 
 /* ----- media query - mobile ----- */
@@ -1978,7 +1993,7 @@ html {
     content: '〈';
     position: absolute;
     top: -3px;
-    left: 60px;
+    left: 18px; /* 210310 캘린더 사이즈 변경 https://imheroim.tistory.com/43 */
     width: 30px;
     height: 24px;
     background-color: transparent;
@@ -1990,7 +2005,7 @@ html {
     content: '〉';
     position: absolute;
     top: -3px;
-    right: 60px;
+    right: 16px; /* 210310 캘린더 사이즈 변경 https://imheroim.tistory.com/43 */
     width: 34px;
     height: 24px;
     background-color: transparent;
@@ -2762,6 +2777,7 @@ html {
 }
 
 .article-header .box-meta .category {
+    /*margin-top: 15px; /* 210310 카테고리가 위의 선과 겹쳐보이는 버그, 화면을 줄이게 되면 간격이 더 넓어져 보임 ㅠㅠ */
     margin-bottom: 12px;
     font-size: 14px;
     font-weight: 600;
