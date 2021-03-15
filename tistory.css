@@ -15,6 +15,24 @@
     src: url("./images/D2CodingBold.woff2") format( "woff2"), url("./images/D2CodingBold.woff") format( "woff");
 }
 
+@font-face {
+    font-family: 'Nanum Gothic'; 
+    font-style: normal;
+    font-weight: 400;
+    src: url(/static_fonts/NanumGothic-Regular.woff2) format("woff2"), 
+        url(/static_fonts/NanumGothic-Regular.woff) format("woff"),
+        url(/static_fonts/NanumGothic-Regular.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: 'Nanum Gothic'; /* Nanum Gothic Bold x */
+    font-style: normal;
+    font-weight: 700;
+    src: url(/static_fonts/NanumGothic-Bold.woff2) format("woff2"),
+        url(/static_fonts/NanumGothic-Bold.woff) format("woff"), 
+        url(/static_fonts/NanumGothic-Bold.ttf) format("truetype");
+}
+
 .clearfix {
     content: "";
     clear: both;
@@ -4713,4 +4731,16 @@ pre>code {
     .toc {
         display: none
     }
+}
+
+/* 210315 TOC Font 변경 */
+ol.toc-list {
+    font-family: "Nanum Gothic", monospace, monospace;
+    line-height: 14px;
+    /* 1 */
+}
+li.toc-list {
+    font-family: "Nanum Gothic", monospace, monospace;
+    line-height: 14px;
+    /* 1 */
 }

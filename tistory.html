@@ -1142,22 +1142,34 @@
             tocSelector: '.toc',
             contentSelector: '.article-view',
             headingSelector: 'h1, h2, h3',
-            hasInnerContainers: false
+            hasInnerContainers: false,
+            scrollSmooth: true,
+            collapseDepth: 0,
+            isCollapsedClass: 'is-collapsed'
         });
 
         $(document).ready(function() {
-            $('.toc').addClass('toc-absolute');
+            $('.toc').addClass('toc-fixed');
 
             var toc_top = $('.toc').offset().top - 165;
-            $(window).scroll(function() {
-                if ($(this).scrollTop() >= toc_top) {
-                    $('.toc').addClass('toc-fixed');
-                    $('.toc').removeClass('toc-absolute');
-                } else {
-                    $('.toc').addClass('toc-absolute');
-                    $('.toc').removeClass('toc-fixed');
-                }
-            });
+            // $(window).scroll(function() {
+            //     if ($(this).scrollTop() >= toc_top) {
+            //         $('.toc').addClass('toc-fixed');
+            //         $('.toc').removeClass('toc-absolute');
+            //     } else {
+            //         $('.toc').addClass('toc-absolute');
+            //         $('.toc').removeClass('toc-fixed');
+            //     }
+            // });
+            // $(window).scroll(function() {
+            //     if ($(this).scrollTop() >= toc_top) {
+            //         $('.toc').addClass('toc-absolute');
+            //         $('.toc').removeClass('toc-fixed');
+            //     } else {
+            //         $('.toc').addClass('toc-fixed');
+            //         $('.toc').removeClass('toc-absolute');
+            //     }
+            // });
         });
     </script>
     <!-- 210311 TOC 도전 끝 -->
